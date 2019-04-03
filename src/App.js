@@ -25,6 +25,7 @@ class App extends Component {
                 >Hello {name}</div>
                 <div className="App">삼항연산자기초 = {1 + 1 === 2 ? 'TRUE' : 'FALSE'}</div>
                 <div>AND 연산자 기초 = {1 + 1 === 2 && 'TRUE'}</div>
+                <hr />
                 <div>{
                     (() => {
                         switch (value) {
@@ -34,10 +35,15 @@ class App extends Component {
                                 return '둘';
                             case 3 :
                                 return '셋';
+                            default :
+                                return 'Default';
                         }
                     })()
                 }</div>
+                <hr />
+                <MyName />
                 <MyName name="리액트" />
+                <hr />
                 <Counter />
             </Fragment>
         );
